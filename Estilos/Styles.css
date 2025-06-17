@@ -44,3 +44,21 @@
 .card-text-hab{
     margin: 2rem
 }
+
+.iconos-redes a {
+  color: white;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.iconos-redes a.instagram:hover {
+  color: #E1306C; /* rosa Instagram */
+}
+
+.iconos-redes a.facebook:hover {
+  color: #3b5998; /* azul Facebook */
+}
+
+.iconos-redes a.whatsapp:hover {
+  color: #25D366; /* verde WhatsApp */
+}
