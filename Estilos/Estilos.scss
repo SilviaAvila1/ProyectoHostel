@@ -14,6 +14,10 @@ $letra-titulo-subtitulo: "Satisfy", cursive;
     font-size: $tam;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .Titulo {
   font-family: $letra-titulo-subtitulo;
   @include EstiloLetra(400,6rem );
@@ -24,18 +28,25 @@ $letra-titulo-subtitulo: "Satisfy", cursive;
     text-align: center;
     font-family: $letra-titulo-subtitulo;
 }
-.img-top{
-    padding-top: 5rem;
-    max-width: 100%;
-    max-height: 100%;
 
+.img-top {
+  margin-top: 5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-.TextoDescriptivo{
-    font-family: $letra-titulo-subtitulo;
-    @include EstiloLetra(400,3.5rem );
-    @extend %texto-normal-centrado;
-    
+
+
+.TextoDescriptivo {
+  font-family: $letra-titulo-subtitulo;
+  @include EstiloLetra(400, 3.5rem);
+  @extend %texto-normal-centrado;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
+
 .SubTextoDescriptivo{
     font-size: 1.5rem;
 }
